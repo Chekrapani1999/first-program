@@ -1,0 +1,35 @@
+<html>
+<head><title>css</title>
+<style type="text/css">
+body{
+background-image:url("/home/itsec2/Downloads/nuda.jpg");
+background-repeat:no-repeat;
+}
+h1,h2.bluetxt,redtxt{color:blue,red;
+font-family:Times new roman;
+text-decoration:line-through;
+font-weight:bold;
+letter-spacing:.3em;
+margin-bottom:5em;
+text-transform:uppercase;
+border-style:dashed;
+text-shadow:2px 4px;
+font-style:bold;
+font-size:50px;}
+#pinktxt{color:pink;
+text-align:right;
+}
+a.redtxt:visited{color:red;}
+a.greentxt:link{color:green;}
+a.largesize:hover{font-size:10pt;}
+a.act:active{color:yellow;}
+</style>
+</head>
+<h1 id=bluetxt>Presidency university</h1>
+<h2 id=pinktxt>Dept of comp engineering</h2>
+<a class=redtxt href ="https://wallpaperscraft.com/catalog/cars"target=_blank>click the link</a>
+<a class=greentxt href ="https://wallpaperscraft.com/catalog/cars"target=_blank>click the link</a>
+<a class=largesize href ="https://wallpaperscraft.com/catalog/cars"target=_blank>click the link</a>
+<a class=act href ="https://wallpaperscraft.com/catalog/cars"target=_blank>click the link</a>
+</body>
+</html>
