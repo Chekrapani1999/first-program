@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>js validation</title>
+<script type="text/javascript">
+function validation()
+{
+var name=document.getElementById("name").value;
+var age=document.getElementById("age").value;
+var gender=document.getElementById("gender");
+if(name=="")
+{
+alert("please enter ur name");
+return false;
+}
+else { for(i=0;i<name.length;i++)
+if(!((name.charAt(i)>='a'&&name.charAt(i)<='z')||(name.charAt(i)>='A'&&name.charAt(i)<='Z')))
+{ alert("enter aplhabets only in name field");
+return false; 
+} 
+if(name.length<5)
+ { alert("username length should be greater than 5");
+return false;
+ }
+if(age=="")
+{
+alert("age field empty");
+return false;
+}
+if(age<1||age>120) 
+{ alert("age value between 1 and 120");
+return false;
+}
+else 
+{
+for(i=0;i<age.length;i++)
+if(!(age.charAt(i)>='0'&&age.charAt(i)<='9'))
+{
+alert("enter number only in age field");
+return false;
+}
+if((gender[0].checked==false)&&(genderw[1].checked==false))
+{
+alert("plz choose ur gender:male or female");
+return false;
+}
+}
+if(address=="")
+{ alert("address field empty");
+}
+return false;
+{
+window.alert("thank you");
+return true;
+}	
+}
+}
+</script>
+</head>
+<body>
+<center>
+<table border="0" bgcolor="silver">
+<form name="UserReg" action="user.html" onsubmit="return validation()" method="post">
+<tr><td height="28" align="right">Name:&nbsp;</td>
+	<td height="28"><input type="text" id="name" size="25"></td></tr>
+<tr><td height="28" align="right">Age:&nbsp;</td>
+	<td height="28"><input type="text" id="age" size="25"></td></tr>
+<tr><td height="28" align="right">Gender:&nbsp;</td>
+	<td height="28"><input type="radio" name="gender" value="male">Male</td></tr>
+<tr><td height="35"></td> 
+	<td height="35"><input type="submit" value="sign up" name="UserSignup"/></td></tr>
+</form></body></html>
+
